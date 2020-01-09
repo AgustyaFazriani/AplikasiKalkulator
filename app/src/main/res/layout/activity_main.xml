@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffa069"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView5"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:textSize="24sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MASUKAN DUA ANGKA"
+        tools:ignore=",HardcodedText"/>
+
+    <EditText
+        android:id="@+id/etAngkake1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="Masukkan Angka Pertama"
+        android:inputType="number"
+        tools:ignore=",Autofill, HardcodedText" />
+
+    <EditText
+        android:id="@+id/etAngkake2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="Masukkan Angka Kedua"
+        android:inputType="number"
+        tools:ignore="AutoFill,HardcodedText,ObsoleteLayoutParam,RtHardcoded" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessLeaf"
+        >
+
+        <Button
+            android:id="@+id/btTambah"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="+"
+            android:layout_weight="1"
+            tools:ignore="ButtonStyle,HardcodedText,ObsoleteLayoutParam,RtHardcoded,RtlHardcoded"/>
+
+        <Button
+            android:id="@+id/btKurang"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/btTambah"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/btTambah"
+            android:text="-"
+            android:layout_weight="1"
+            tools:ignore="ButtonStyle,HardcodedText,ObsoleteLayoutParam,RtlHardcoded,UnusedAttribute"/>
+
+        <Button
+            android:id="@+id/btKali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/btKurang"
+            android:layout_marginLeft="34dp"
+            android:layout_toLeftOf="@id/btKurang"
+            android:text="x"
+            android:layout_weight="1"
+            tools:ignore="ButtonStyle,HardcodedText,ObsoleteLayoutParam,RtlHardcoded" />
+
+        <Button
+            android:id="@+id/btBagi"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/btKali"
+            android:layout_marginLeft="8dp"
+            android:text="/"
+            android:layout_weight="1"
+            tools:ignore="ButtonStyle,HardcodedText,ObsoleteLayoutParam,RtlHardcoded" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btBersihkan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bersihkan"
+        android:layout_marginBottom="8dp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tvHasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:gravity="center"
+        android:text="Hasil"
+        android:layout_marginBottom="16dp"
+        tools:ignore="HardcodedText" />
+
+
+    <TextView
+        android:id="@+id/tvHasilSeluruh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="0"
+        tools:ignore="HardcodedText,HrdcodedText"/>
+</LinearLayout>
